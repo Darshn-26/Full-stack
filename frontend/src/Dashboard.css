@@ -1,0 +1,140 @@
+/* src/Dashboard.css */
+.dashboard-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1d72b8;
+  }
+  
+  .accordion-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .accordion-toggle {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .accordion-toggle:hover {
+    background-color: #0056b3;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
+  }
+  
+  .accordion-content.open {
+    max-height: 500px; /* Large enough to fit the content */
+    padding: 15px 0;
+  }
+  
+  .add-student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .add-student-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .add-btn {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;
+  }
+  
+  .search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .student-table th, .student-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .student-table th {
+    background-color: #1d72b8;
+    color: white;
+  }
+  
+  .student-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .student-table tr:hover {
+    background-color: #f5f7fa;
+  }
+  
+  .edit-btn, .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-btn {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #d29e03;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .highlighted {
+    background-color: #d1d2d4 !important; /* Highlight matched rows */
+  }
+  
