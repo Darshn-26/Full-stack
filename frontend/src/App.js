@@ -3,6 +3,7 @@ import LoginRegister from './LoginRegister';
 import React from 'react';
 import Home from './Home';
 import Dashboard from './Dashboard'; // Import the new Dashboard component
+import Sample from './Sample';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path='/register' element={<LoginRegister />} />
           <Route path='/home' element={<Home />} />
           <Route path='/dashboard' element={<Dashboard />} /> {/* Dashboard Route */}
+          <Route path='/sample' element={<Sample />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -31,7 +31,7 @@ function Home() {
       </div>
       <div className="actions">
         <button className="btn btn-primary" onClick={() => navigate('/dashboard')}>Go to Dashboard</button> {/* Updated button */}
-        <button className="btn btn-secondary" onClick={() => navigate('/settings')}>Settings</button>
+        <button className="btn btn-secondary" onClick={() => navigate('/sample')}>Settings</button>
         <button className="btn btn-danger" onClick={handleLogout}>Logout</button>
       </div>
     </div>
